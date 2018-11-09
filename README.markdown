@@ -1,6 +1,6 @@
 This is a simple demonstration application used in the [Jenkins: The Definitive Guide](http://wakaleo.com/books/jenkins-the-definitive-guide) book.
 
-http://jenkin-server.westeurope.cloudapp.azure.com:8080/buildStatus/icon?job=GoT
+[![Build Status](http://jenkin-server.westeurope.cloudapp.azure.com:8080/buildStatus/icon?job=GoT)](http://jenkin-server.westeurope.cloudapp.azure.com:8080/job/GoT)
 
 ## Building the project
 
