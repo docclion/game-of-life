@@ -1,10 +1,12 @@
 pipeline {
-  agent any
+  agent {
+      label 'master'
+      }
   stages {
     stage('Build') {
       steps {
         build(quietPeriod: -2, job: '1')
-        sh '/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-builder/bin/mvn install'
+        sh '/home/ssoza/github/game-of-life/ mvn package'
       }
     }
   }
