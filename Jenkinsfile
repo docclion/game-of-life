@@ -7,7 +7,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '/home/ssoza/workspace/pipetest/ mvn package'
+        sh 'cd /home/ssoza/workspace/pipetest mvn package'
+        sh 'mvn package'
       }
     }
   }
